@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.jitendraalekar"
+group = "io.github.jitendra93"
 version = "1.0"
 
 
@@ -15,9 +15,9 @@ repositories {
 
 gradlePlugin{
     plugins {
-        register("com.jitendraalekar.wrapperconfigurator"){
-            id ="com.jitendraalekar.wrapperconfigurator"
-            implementationClass = "com.jitendraalekar.wrapperconfigurator.gradle.WrapperPlugin"
+        register("io.github.jitendra93.wrapperconfigurator"){
+            id ="io.github.jitendra93.wrapperconfigurator"
+            implementationClass = "io.github.jitendra93.wrapperconfigurator.gradle.WrapperPlugin"
         }
     }
 }
@@ -28,16 +28,16 @@ publishing{
             artifactId = "gradle-wrapper-configurator"
         }
     }
-    repositories {
-        mavenLocal()/*
+   /* repositories {
+        mavenLocal()*//*
         maven{
             url = URI.create("URL_TO_ARTIFACTORY")
             credentials{
                 username = "TODO_REPLACE_USERNAME"
                 password = "TODO_REPLACE_KEY"
             }
-        }*/
-    }
+        }*//*
+    }*/
 }
 
 
@@ -55,7 +55,7 @@ java {
 }
 
 
-/*
+/* //for gradle 7
 tasks.named<Copy>("processResources"){
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }*/

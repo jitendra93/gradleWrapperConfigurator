@@ -1,4 +1,4 @@
-package com.jitendraalekar.wrapperconfigurator.gradle
+package io.github.jitendra93.wrapperconfigurator.gradle
 
 import okhttp3.OkHttpClient
 import okhttp3.Request
